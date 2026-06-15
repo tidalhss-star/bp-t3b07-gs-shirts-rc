@@ -2,21 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tidalhss-star.github.io/bp-t3b07-gs-shirts-rc/</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://tidalhss-star.github.io/bp-t3b07-gs-shirts-rc/about.html</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tidalhss-star.github.io/bp-t3b07-gs-shirts-rc/blog.html</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://tidalhss-star.github.io/bp-t3b07-gs-shirts-rc/posts/interview-002-1hxywn1.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://tidalhss-star.github.io/bp-t3b07-gs-shirts-rc/posts/juice-1.html</loc>
@@ -27,6 +33,12 @@
   <url>
     <loc>https://tidalhss-star.github.io/bp-t3b07-gs-shirts-rc/posts/juice-2.html</loc>
     <lastmod>2026-05-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://tidalhss-star.github.io/bp-t3b07-gs-shirts-rc/posts/myth-001-1hxywn1.html</loc>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -56,7 +68,7 @@
   </url>
   <url>
     <loc>https://tidalhss-star.github.io/bp-t3b07-gs-shirts-rc/feed.xml</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
