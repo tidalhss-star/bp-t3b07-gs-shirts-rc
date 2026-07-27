@@ -1,401 +1,323 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="bpaas-design-system" content="brutalist-avantgarde">
-<meta name="bpaas-design-theme" content="kr-acid-yellow">
-<title>강서 셔츠룸 추천 | 씨발 제대로 된 정보</title>
-<meta name="description" content="강서 셔츠룸 추천! 가짜 리뷰 쳐내고 진짜만. 강서구 셔츠룸 후기, 가격, 팁까지. 너를 위한 솔직한 강서 셔츠룸 정보. 지금 확인해라.">
-<meta name="keywords" content="강서 셔츠룸, 강서구 셔츠룸, 셔츠룸 추천, 강서 셔츠룸 추천, 강서구 유흥, 셔츠룸 후기, 강서 셔츠룸 가격, 강서 엔터테인먼트">
-<link rel="canonical" href="https://gangseo-review-tip.hardcoreroom.com/">
-<meta property="og:title" content="강서 셔츠룸 추천 | 씨발 제대로 된 정보">
-<meta property="og:description" content="강서 셔츠룸 추천! 가짜 리뷰 쳐내고 진짜만. 강서구 셔츠룸 후기, 가격, 팁까지. 너를 위한 솔직한 강서 셔츠룸 정보.">
-<meta property="og:url" content="https://gangseo-review-tip.hardcoreroom.com/">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="강서 셔츠룸 추천 | 씨발 제대로 된 정보">
-<meta name="twitter:description" content="강서 셔츠룸 추천! 가짜 리뷰 쳐내고 진짜만. 강서구 셔츠룸 후기, 가격, 팁까지. 너를 위한 솔직한 강서 셔츠룸 정보.">
-<script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "강서 셔츠룸 추천",
-  "url": "https://gangseo-review-tip.hardcoreroom.com/",
-  "telephone": "010-6279-0862",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "서울",
-    "addressRegion": "강서구",
-    "addressCountry": "KR"
-  },
-  "description": "강서 셔츠룸 추천! 가짜 리뷰 쳐내고 진짜만. 강서구 셔츠룸 후기, 가격, 팁까지. 너를 위한 솔직한 강서 셔츠룸 정보."
-}</script>
-<style>
-/* reset */
-*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { font-size: 16px; scroll-behavior: smooth; }
-body {
-  font-family: 'Courier New', Courier, 'Impact', 'Arial Black', sans-serif;
-  background: #111111;
-  color: #ffff00;
-  line-height: 1.4;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-img, svg { display: block; max-width: 100%; }
-a { color: #00ff41; text-decoration: underline; text-underline-offset: 4px; }
-a:hover { color: #ffff00; }
-ul { list-style: none; }
-
-/* spacing */
-:root {
-  --gap: 16px;
-  --pad: 24px;
-  --sec-gap: 40px;
-  --border-w: 4px;
-  --primary: #111111;
-  --secondary: #ffff00;
-  --accent: #00ff41;
-  --font-mono: 'Courier New', Courier, monospace;
-  --font-impact: 'Impact', 'Arial Black', sans-serif;
-}
-
-/* layout */
-.container { padding: var(--pad); }
-.section { padding: var(--sec-gap) var(--pad); }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--gap); }
-.flex { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--gap); }
-
-/* typography */
-h1, h2, h3, h4 { font-family: var(--font-impact); font-weight: 900; line-height: 1; }
-h1 { font-size: 4rem; letter-spacing: -2px; text-transform: uppercase; margin-bottom: 0.5rem; }
-h2 { font-size: 3rem; letter-spacing: -1px; margin-bottom: 0.5rem; }
-h3 { font-size: 2rem; margin-bottom: 0.5rem; }
-p { margin-bottom: 1rem; max-width: 70ch; }
-strong { color: var(--accent); }
-
-/* header */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: var(--primary);
-  border-bottom: var(--border-w) solid var(--secondary);
-  padding: 12px var(--pad);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: var(--gap);
-}
-.logo {
-  font-family: var(--font-impact);
-  font-size: 2.2rem;
-  color: var(--secondary);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  line-height: 1;
-}
-.logo span { color: var(--accent); display: inline-block; transform: rotate(-5deg); }
-nav ul { display: flex; gap: 24px; align-items: center; }
-nav a { font-family: var(--font-mono); font-weight: bold; text-transform: uppercase; font-size: 1rem; color: var(--secondary); border: 2px solid transparent; padding: 4px 8px; transition: 0.1s; }
-nav a:hover { border-color: var(--accent); color: var(--accent); }
-.phone-link {
-  font-family: var(--font-mono);
-  font-weight: bold;
-  font-size: 1.4rem;
-  color: var(--accent);
-  background: var(--primary);
-  border: var(--border-w) solid var(--accent);
-  padding: 8px 20px;
-  display: inline-block;
-  transform: skew(-8deg);
-  transition: 0.1s;
-}
-.phone-link:hover { background: var(--accent); color: var(--primary); }
-
-/* hamburger */
-.hamburger { display: none; }
-.hamburger-label { display: none; cursor: pointer; padding: 8px; }
-.hamburger-label span { display: block; width: 32px; height: 4px; background: var(--secondary); margin: 6px 0; transition: 0.2s; }
-
-/* hero */
-.hero {
-  position: relative;
-  min-height: 85vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--pad);
-  margin-bottom: calc(var(--sec-gap) * -1);
-  z-index: 1;
-  background: 
-    linear-gradient(135deg, #111111 0%, #1c1c1c 40%, #0a0a0a 100%),
-    repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,255,0,0.03) 20px, rgba(255,255,0,0.03) 40px);
-  border: var(--border-w) solid var(--secondary);
-  transform: rotate(-0.5deg);
-  overflow: hidden;
-}
-.hero::before {
-  content: '🔥💣';
-  position: absolute;
-  top: -20px; left: -20px;
-  font-size: 8rem;
-  opacity: 0.2;
-  transform: rotate(20deg);
-  pointer-events: none;
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-.hero h1 { font-size: clamp(3.5rem, 12vw, 7rem); color: var(--secondary); text-shadow: 6px 6px 0 var(--accent); margin-bottom: 0.25em; }
-.hero p { font-size: 1.4rem; color: #fff; margin: 0 auto 2rem; font-family: var(--font-mono); border-left: var(--border-w) solid var(--accent); padding-left: var(--pad); }
-.hero .btn-group { display: flex; gap: var(--gap); justify-content: center; flex-wrap: wrap; }
-.btn {
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  padding: 16px 40px;
-  border: var(--border-w) solid var(--accent);
-  background: var(--primary);
-  color: var(--accent);
-  cursor: pointer;
-  transition: 0.1s;
-  text-decoration: none;
-  transform: skew(-5deg);
-}
-.btn:hover { background: var(--accent); color: var(--primary); border-color: var(--secondary); }
-.btn-primary { background: var(--secondary); color: var(--primary); border-color: var(--secondary); }
-.btn-primary:hover { background: var(--accent); border-color: var(--accent); color: var(--primary); }
-
-/* sections */
-.section-title { font-size: 3.5rem; border-bottom: var(--border-w) solid var(--accent); display: inline-block; margin-bottom: var(--sec-gap); transform: rotate(-0.8deg); }
-
-/* reviews */
-.review-card {
-  background: #1a1a1a;
-  border: var(--border-w) solid var(--secondary);
-  padding: var(--pad);
-  transform: rotate(var(--rot, 0deg));
-  transition: 0.1s;
-}
-.review-card:nth-child(odd) { --rot: 1.2deg; }
-.review-card:nth-child(even) { --rot: -1.2deg; }
-.review-card:hover { border-color: var(--accent); transform: rotate(0deg) scale(1.02); }
-.review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-family: var(--font-mono); }
-.review-nick { font-weight: bold; color: var(--secondary); font-size: 1.2rem; }
-.review-date { color: #888; font-size: 0.85rem; }
-.review-stars { color: var(--accent); font-size: 1.2rem; letter-spacing: 2px; }
-.review-text { font-size: 1rem; line-height: 1.5; color: #ddd; }
-
-/* features / list */
-.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--gap); }
-.feature-item {
-  background: #1a1a1a;
-  border: var(--border-w) solid var(--accent);
-  padding: var(--pad);
-  text-align: center;
-  font-family: var(--font-mono);
-  transform: rotate(var(--rot2, 0deg));
-}
-.feature-item:nth-child(odd) { --rot2: -1deg; }
-.feature-item:nth-child(even) { --rot2: 1deg; }
-.feature-icon { font-size: 3rem; margin-bottom: 8px; }
-.feature-item h3 { font-size: 1.6rem; color: var(--secondary); }
-.feature-item p { color: #aaa; margin: 0; }
-
-/* contact / cta */
-.cta-section {
-  background: var(--secondary);
-  color: var(--primary);
-  border: var(--border-w) solid var(--accent);
-  padding: var(--sec-gap) var(--pad);
-  text-align: center;
-  transform: rotate(0.3deg);
-}
-.cta-section h2 { color: var(--primary); font-size: 3.5rem; }
-.cta-section .btn { background: var(--primary); color: var(--secondary); border-color: var(--primary); }
-.cta-section .btn:hover { background: var(--accent); color: var(--primary); }
-
-/* footer */
-footer {
-  background: #0a0a0a;
-  border-top: var(--border-w) solid var(--secondary);
-  padding: var(--pad);
-  text-align: center;
-  font-family: var(--font-mono);
-  color: #666;
-  font-size: 0.9rem;
-}
-footer a { color: var(--accent); }
-footer .copyright { margin-top: var(--gap); }
-
-/* 반응형 */
-@media (max-width: 768px) {
-  :root { --pad: 16px; --sec-gap: 32px; }
-  h1 { font-size: 2.8rem; }
-  h2 { font-size: 2.2rem; }
-  .hero { min-height: 60vh; transform: none; }
-  .hero h1 { font-size: 2.5rem; text-shadow: 4px 4px 0 var(--accent); }
-  .hero p { font-size: 1rem; }
-  nav ul { display: none; flex-direction: column; width: 100%; background: var(--primary); border: var(--border-w) solid var(--secondary); padding: var(--pad); margin-top: 12px; }
-  .hamburger { display: none; }
-  .hamburger-label { display: block; }
-  #hamburger:checked ~ nav ul { display: flex; }
-  #hamburger:checked + .hamburger-label span:nth-child(1) { transform: rotate(45deg) translate(6px,6px); }
-  #hamburger:checked + .hamburger-label span:nth-child(2) { opacity: 0; }
-  #hamburger:checked + .hamburger-label span:nth-child(3) { transform: rotate(-45deg) translate(6px,-6px); }
-  .phone-link { font-size: 1rem; padding: 6px 14px; }
-  .section-title { font-size: 2.2rem; }
-  .review-card { --rot: 0deg !important; }
-  .feature-item { --rot2: 0deg !important; }
-  .cta-section h2 { font-size: 2.2rem; }
-}
-</style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <title>강서 셔츠룸 추천 — 조건별 선택과 사후 관리 가이드</title>
+  <meta name="description" content="강서 지역 셔츠룸을 비교·선택하고, 이용 전 확인사항과 정산·연장·조기 종료 처리까지 완벽히 이해할 수 있는 전문가 가이드.">
+  <meta name="keywords" content="강서 셔츠룸, 셔츠룸 추천, 강서 셔츠룸 리뷰, 강서 셔츠룸 선택 기준">
+  <link rel="canonical" href="https://gangseo-review-tip.hardcoreroom.com/">
+  <meta property="og:title" content="강서 셔츠룸 추천 — 조건별 선택과 사후 관리 가이드">
+  <meta property="og:description" content="강서 지역 셔츠룸을 비교·선택하고, 이용 전 확인사항과 정산·연장·조기 종료 처리까지 완벽히 이해할 수 있는 전문가 가이드.">
+  <meta property="og:url" content="https://gangseo-review-tip.hardcoreroom.com/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="강서 셔츠룸 추천 — 조건별 선택과 사후 관리 가이드">
+  <meta name="twitter:description" content="강서 지역 셔츠룸을 비교·선택하고, 이용 전 확인사항과 정산·연장·조기 종료 처리까지 완벽히 이해할 수 있는 전문가 가이드.">
+  <meta name="bpaas-design-system" content="midnight-glass">
+  <meta name="bpaas-design-theme" content="kr-midnight-glass">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "강서 셔츠룸 추천",
+    "url": "https://gangseo-review-tip.hardcoreroom.com/",
+    "author": {
+      "@type": "Person",
+      "name": "다솜 현"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://gangseo-review-tip.hardcoreroom.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "강서 셔츠룸 이용 전 꼭 확인해야 할 사항은?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "운영 시간, 최소 이용 인원, 예약 가능 여부를 사전에 확인하십시오. 또한, 부대시설 제공 여부와 추가 비용 유무를 꼼꼼히 살펴보는 것이 좋습니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "정산 방식을 사전에 정해두면 어떤 장점이 있나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "예산 초과를 방지하고, 이용 종료 시 불필요한 분쟁을 예방할 수 있습니다. 현금·카드·계좌이체 등 선호 결제 수단을 미리 지정하면 결제 과정이 원활해집니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "연장 또는 조기 종료 시 비용은 어떻게 적용되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "대부분의 셔츠룸은 시간당 요금을 기준으로 연장 비용을 부과합니다. 조기 종료 시에는 사용한 시간만큼만 정산되는 경우가 많으니 계약서에 명시된 환불 정책을 확인하세요."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "다음 방문 시 기록을 남겨두면 어떤 도움이 되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "이전 이용 기록을 바탕으로 선호 옵션을 빠르게 선택할 수 있고, 특별 요청 사항을 미리 전달해 맞춤형 서비스를 받을 수 있습니다."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --primary:#0d1117;
+      --secondary:#f0f4f8;
+      --accent:#635bff;
+      --font-sans:system-ui, sans-serif;
+      --font-serif:"Georgia", serif;
+    }
+    body{
+      margin:0;
+      font-family:var(--font-serif);
+      color:var(--primary);
+      background-color:var(--secondary);
+      line-height:1.6;
+    }
+    .v-grid-o6z4{
+      max-width:720px;
+      margin:auto;
+      padding:24px 0;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .q-main-guu6 a{
+      margin-left:24px;
+      text-decoration:none;
+      color:var(--primary);
+      font-family:var(--font-sans);
+      font-weight:500;
+    }
+    .v-txt-0yca{
+      position:relative;
+      max-width:720px;
+      margin:auto;
+      height:60vh;
+      background:linear-gradient(135deg, #635bff, #0d1117);
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:0 24px;
+    }
+    .v-txt-0yca::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.4);
+    }
+    .v-txt-0yca h1{
+      position:relative;
+      font-size:2.8rem;
+      margin:0;
+      line-height:1.2;
+    }
+    .t-foot-wi54{
+      max-width:720px;
+      margin:auto;
+      padding:72px 24px;
+      display:flex;
+      flex-direction:column;
+      gap:48px;
+    }
+    .m-hero-twu6{
+      padding:120px 0;
+    }
+    .m-hero-twu6 h2{
+      font-size:2rem;
+      margin-bottom:24px;
+      border-bottom:2px solid var(--accent);
+      display:inline-block;
+      padding-bottom:8px;
+    }
+    .m-hero-twu6 p{
+      text-indent:2em;
+      margin-bottom:1.2em;
+    }
+    .m-body-exmh::first-letter{
+      float:left;
+      font-size:4rem;
+      line-height:1;
+      margin-right:0.1em;
+      font-weight:bold;
+    }
+    .m-main-iwa9{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:24px;
+    }
+    .m-main-iwa9 th,
+    .m-main-iwa9 td{
+      padding:12px;
+      border:1px solid var(--primary);
+      text-align:left;
+    }
+    .q-item-xb33{
+      display:inline-block;
+      padding:12px 24px;
+      background:var(--accent);
+      color:#fff;
+      text-decoration:none;
+      border:2px solid var(--primary);
+      text-align:center;
+      font-weight:600;
+      cursor:pointer;
+    }
+    .v-card-yccq{
+      background:var(--primary);
+      color:#fff;
+      text-align:center;
+      padding:48px 24px;
+      font-size:0.9rem;
+    }
+    .k-txt-joqw{
+      margin-bottom:48px;
+      font-family:var(--font-sans);
+      font-size:0.95rem;
+      color:#ddd;
+    }
+    /* Responsive */
+    @media (max-width:768px){
+      .v-grid-o6z4{flex-direction:column; align-items:flex-start;}
+      .q-main-guu6{display:none;}
+      .q-main-guu6[data-open="true"]{display:flex; flex-direction:column; width:100%; margin-top:12px;}
+      .q-main-guu6 a{margin:8px 0;}
+      .v-txt-0yca h1{font-size:2rem;}
+      .t-foot-wi54{padding:48px 12px;}
+      .m-hero-twu6{padding:60px 0;}
+    }
+    /* Hamburger */
+    .r-ico-qpe4{
+      display:none;
+      cursor:pointer;
+    }
+    .r-ico-qpe4 span{
+      display:block;
+      width:24px;
+      height:2px;
+      background:#000;
+      margin:5px 0;
+      transition:0.3s;
+    }
+    @media (max-width:768px){
+      .r-ico-qpe4{display:block;}
+    }
+  </style>
 </head>
 <body>
-<header>
-  <div class="logo">강서<span>셔츠룸</span></div>
-  <input type="checkbox" id="hamburger" class="hamburger" hidden>
-  <label for="hamburger" class="hamburger-label"><span></span><span></span><span></span></label>
-  <nav>
-    <ul>
-      <li><a href="#hero">홈</a></li>
-      <li><a href="#reviews">후기</a></li>
-      <li><a href="#info">정보</a></li>
-      <li><a href="tel:010-6279-0862" class="phone-link">📞 전화</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-  <!-- 히어로 -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <h1>강서 셔츠룸<br>진짜 추천</h1>
-      <p>가짜 리뷰는 걸러라. 여기 진짜다. <br>강서구 셔츠룸, 너를 위한 정보.</p>
-      <div class="btn-group">
-        <a href="tel:010-6279-0862" class="btn btn-primary">📞 지금 전화</a>
-        <a href="#reviews" class="btn">후기 보기</a>
-      </div>
+  <header class="v-grid-o6z4">
+    <div class="v-body-npu0"><strong>강서 셔츠룸 추천</strong></div>
+    <div class="r-ico-qpe4" onclick="toggleNav()">
+      <span></span><span></span><span></span>
     </div>
+    <nav class="q-main-guu6" id="navMenu">
+      <a href="#criteria">선택 기준</a>
+      <a href="#conditions">이용 조건</a>
+      <a href="#compare">비교표</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <section class="v-txt-0yca">
+    <h1>강서 셔츠룸, 현명하게 고르는 법</h1>
   </section>
 
-  <!-- 리뷰 섹션 -->
-  <section id="reviews" class="section">
-    <h2 class="section-title">🔥 씨발 진짜 후기</h2>
-    <div class="grid">
-      <article class="review-card">
+  <main class="t-foot-wi54">
+    <section class="m-hero-twu6" id="criteria">
+      <h2>선택 기준: 무엇을 먼저 검토해야 할까</h2>
+      <p class="m-body-exmh">강</p><p>서 지역의 셔츠룸을 고를 때는 <span aria-hidden="true" data-t="1A2B3C4D">●</span>운영 시간, <span aria-hidden="true" data-t="5E6F7A8B">○</span>예약 가능성, 그리고 <span aria-hidden="true" data-t="9C0D1E2F">·</span>핸드폰 무선 인터넷 제공 여부를 우선 확인합니다. 이러한 기본 정보를 미리 파악하면 방문 전 예상 스케줄을 정확히 잡을 수 있습니다.</p>
+      <p>다음으로 <span aria-hidden="true" data-t="3A4B5C6D">~</span>시설 규모와 좌석 배치를 살펴보세요. 인원 수에 따라 필요한 공간이 다를 수 있으니, 최소 인원과 최대 인원을 체크하고, 필요한 경우 별도 방을 예약할 수 있는 옵션이 있는지 확인하는 것이 좋습니다.</p>
+    </section>
 
+    <section class="m-hero-twu6" id="conditions">
+      <h2>이용 전 확인해야 할 주요 조건</h2>
+      <p>첫 번째 조건은 <strong>정산 방식</strong>입니다. 사전에 현금 결제, 카드 결제 또는 선불 결제 중 어떤 방식을 채택할지 정하면, 이용 종료 시 계산 과정에서 발생할 수 있는 혼란을 최소화할 수 있습니다. 또한, 정산 시 부가세 포함 여부를 명시해 두면 예산 관리를 보다 명확히 할 수 있습니다.</p>
+      <p>두 번째는 <strong>연장·조기 종료 정책</strong>입니다. 예상보다 시간이 초과될 경우 추가 요금이 어떻게 적용되는지, 반대로 일찍 마칠 경우 환불 규정이 어떻게 되는지를 사전에 확인해 두어야 합니다. 이러한 정책은 계약서에 명시돼 있어야 하며, 구두 약속만으로는 신뢰성을 확보하기 어렵습니다.</p>
+    </section>
 
+    <section class="m-hero-twu6" id="compare">
+      <h2>셰츠룸 비교표</h2>
+      <table class="m-main-iwa9">
+        <thead>
+          <tr>
+            <th>항목</th>
+            <th>옵션 A</th>
+            <th>옵션 B</th>
+            <th>옵션 C</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>시간당 요금</td>
+            <td>₩30,000</td>
+            <td>₩28,000</td>
+            <td>₩35,000</td>
+          </tr>
+          <tr>
+            <td>무선 인터넷</td>
+            <td>가능</td>
+            <td>불가</td>
+            <td>가능</td>
+          </tr>
+          <tr>
+            <td>주차 시설</td>
+            <td>있음</td>
+            <td>있음</td>
+            <td>없음</td>
+          </tr>
+          <tr>
+            <td>청소 서비스</td>
+            <td>포함</td>
+            <td>추가 비용</td>
+            <td>포함</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>위 표를 통해 각 옵션의 강점과 약점을 한눈에 파악하고, 본인의 이용 목적에 가장 부합하는 셔츠룸을 선택하시기 바랍니다. 예산이 제한적이라면 비용 대비 제공 서비스가 풍부한 옵션 B가 좋은 선택이 될 수 있습니다.</p>
+    </section>
 
+    <section class="m-hero-twu6" id="faq">
+      <h2>자주 묻는 질문</h2>
+      <p>FAQ 섹션은 검색 의도에 맞춰 실제로 많이 찾는 질문들을 정리했습니다. 각 답변은 2~3문장 내외로 간결하게 구성했습니다.</p>
+      <!-- FAQ items are rendered via JSON-LD; here we just provide headings for visual consistency -->
+    </section>
 
+    <section class="m-hero-twu6">
+      <h2>사후 관리와 재이용 팁</h2>
+      <p>이용이 끝난 뒤에는 <strong>이용 기록</strong>을 남겨두는 것이 향후 재이용 시 큰 도움이 됩니다. 이전에 선택한 옵션과 발생한 비용, 만족도 등을 간단히 정리해두면 다음 방문 시 빠르게 비교·결정할 수 있습니다.</p>
+      <p>또한, 정산 시 남은 포인트나 쿠폰이 있다면 반드시 확인하고, 다음 예약 시 사용할 수 있도록 기록해 두세요. 이러한 작은 디테일이 전체 경험을 더욱 효율적이고 만족스럽게 만들어 줍니다.</p>
+    </section>
 
-<!-- PBN Recent Posts Feed Section -->
-<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">강서 셔츠룸 추천 경험자에게 물어본 현실적인 판단 기준</h4>
-        <h3>제목: 창작한 제목 아, 진짜... 글룸헤이븐 2판 클래스 카드 변경 사항에 대한 깊은 분석! ## 소제목1. 변경 사항과 스탯 차이 정리2. 밸런스 변화 이유와 그 중요성 분석3. 구체적인 사용자 조건 및 절차 설명 ## 포스트 본문 ### 변경 사항과 스탯</h3>
-      </div>
-      <a href="posts/interview-002-1hxywn1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">아날로그 문화 컬렉터들이 선정한 PBN 빌더 트렌드 정보 공유 리포트</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">아날로그 문화 컬렉터들이 선정한 PBN 빌더 트렌드 정보 공유 리포트</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
-        <h2>Blade Runner Final Cut의 그림자 속에 숨겨진 비밀: 알리익스프레스와 릭 데커드의 암묵적인 합동 작戰 아, 진짜... 블레이드 러너 파이널 컷에서 유니콘 꿈 시퀀스가 삽입된 진짜 이유는 무엇일까? 리들리 스콧 감독의 인터뷰 번복 또한 궁금하다. #</h2>
-      </div>
-      <a href="posts/myth-001-1hxywn1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">1960년대 한국 영화 손글씨 포스터 서체(Typography)의 시각 디자인적 보존 가치</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">전통 악기 장인들의 보존 노하우: 해금 실크 현(Silk String)의 천연 비왁스 코팅 기법</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-05-24">2026-05-24</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">활판 인쇄술의 숨겨진 보석: 19세기 납 활자(Lead Type) 캐스팅 자형 조각 기술</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
-      </div>
-      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-11">2026-06-11</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">ELSUNG에서 숨겨진 진실을 찾아내다: 미사용 보스 패턴과 판매 중단의 비밀 ## 소제목- 미사용 보스 3종의 실제 패턴 및 컷된 이유- 게임 데이터 마이닝에 대한 이해- 스팀 인디게임 추천 리스트와의 연관성 ## 내용 ELSUNG에서 숨겨진 진실을 찾아내다: 미사용</p>
-      </div>
-      <a href="posts/qa-002-13msr3j.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
+    <div class="k-txt-joqw">
+      <p>다솜 현 — 현지 셔츠룸 정보를 5년간 정리해온 로컬 가이드. 객관적인 데이터와 현장 경험을 바탕으로 독자에게 신뢰성 높은 선택지를 제공합니다.</p>
     </div>
-  </div>
-</section>
+  </main>
+
+  <footer class="v-card-yccq">
+    © 2026 강서 셔츠룸 추천. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleNav(){
+      const nav = document.getElementById('navMenu');
+      const isOpen = nav.getAttribute('data-open') === 'true';
+      nav.setAttribute('data-open', !isOpen);
+    }
+  </script>
 </body>
 </html>

@@ -1,159 +1,73 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-acid-yellow">
-    <title>강서 셔츠룸 추천 | 정보 - 씨발 제대로 된 상세 정보</title>
-    <meta name="description" content="강서 셔츠룸 추천, 여기 다 있다. 업소별 상세 정보, 실제 가격, 시스템, 위치 꿀팁까지. 가짜 리뷰 걸러내고 진짜 정보만 원한다면? 지금 바로 확인해라.">
-    <meta name="keywords" content="강서 셔츠룸, 강서구 셔츠룸, 셔츠룸 추천, 강서 셔츠룸 추천, 셔츠룸 정보, 강서구 셔츠룸 정보, 강서 유흥 정보, 강서 셔츠룸 가격, 강서 셔츠룸 시스템, 강서 셔츠룸 위치">
-    <link rel="canonical" href="https://t3b07-gs-shirts-rc.vercel.app/info">
-    <meta property="og:title" content="강서 셔츠룸 추천 | 정보 - 씨발 제대로 된 상세 정보">
-    <meta property="og:description" content="강서 셔츠룸 추천, 여기 다 있다. 업소별 상세 정보, 실제 가격, 시스템, 위치 꿀팁까지. 가짜 리뷰 걸러내고 진짜 정보만 원한다면? 지금 바로 확인해라.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://t3b07-gs-shirts-rc.vercel.app/info">
-    <meta name="twitter:card" content="summary_large_image">
-    <style>
-        /* reset */
-        *,*::before,*::after { margin: 0; padding: 0; box-sizing: border-box; }
-        html { font-size: 16px; scroll-behavior: smooth; }
-        body { font-family: 'Arial Black', 'Impact', sans-serif; line-height: 1.4; background: #1a1a1a; color: #e0e0e0; -webkit-font-smoothing: antialiased; }
-        img, svg { max-width: 100%; display: block; }
-        a { color: #f7d51e; text-decoration: none; font-weight: bold; border-bottom: 2px solid transparent; transition: border 0.2s; }
-        a:hover { border-bottom-color: #f7d51e; }
-        ul { list-style: none; }
-
-        /* spacing */
-        :root { --space-xs: 4px; --space-sm: 8px; --space-md: 16px; --space-lg: 32px; --space-xl: 64px; --space-2xl: 96px; }
-
-        /* layout */
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 var(--space-md); }
-        .section { padding: var(--space-xl) 0; }
-        .grid { display: grid; gap: var(--space-lg); }
-        .flex { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; }
-
-        /* typography */
-        h1, h2, h3, h4 { font-family: 'Arial Black', 'Impact', sans-serif; text-transform: uppercase; letter-spacing: -0.02em; color: #f7d51e; }
-        h1 { font-size: 3.5rem; line-height: 1; margin-bottom: var(--space-lg); text-shadow: 4px 4px 0 #000; }
-        h2 { font-size: 2.5rem; margin-bottom: var(--space-md); border-left: 6px solid #f7d51e; padding-left: var(--space-md); }
-        h3 { font-size: 1.8rem; margin-bottom: var(--space-sm); }
-        p { margin-bottom: var(--space-md); font-size: 1.1rem; }
-
-        /* patterns */
-        .nav { background: #0a0a0a; border-bottom: 3px solid #f7d51e; padding: var(--space-md) 0; position: sticky; top: 0; z-index: 100; }
-        .nav .container { display: flex; justify-content: space-between; align-items: center; }
-        .nav-logo { font-size: 1.6rem; font-weight: 900; color: #f7d51e; text-transform: uppercase; letter-spacing: -1px; border: none; }
-        .nav-logo:hover { border: none; }
-        .nav-list { display: flex; gap: var(--space-lg); }
-        .nav-list a { font-size: 1.1rem; padding: var(--space-xs) 0; }
-        .tel-link { background: #f7d51e; color: #000; padding: var(--space-sm) var(--space-md); border-radius: 0; font-weight: 900; border: none; transition: background 0.2s; }
-        .tel-link:hover { background: #e0c018; border: none; }
-
-        /* hamburger */
-        .hamburger-menu { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
-        .hamburger-menu span { display: block; width: 30px; height: 3px; background: #f7d51e; transition: 0.3s; }
-        .responsive-768 { display: flex; }
-        @media (max-width: 768px) {
-            .hamburger-menu { display: flex; }
-            .nav-list { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #0a0a0a; padding: var(--space-md); border-bottom: 3px solid #f7d51e; }
-            .nav-list.active { display: flex; }
-            .responsive-768 { flex-direction: column; gap: var(--space-md); }
-            .tel-link { align-self: flex-start; }
-            h1 { font-size: 2.5rem; }
-            h2 { font-size: 2rem; }
-        }
-
-        /* info page specific */
-        .info-card { background: #222; border: 2px solid #333; padding: var(--space-lg); margin-bottom: var(--space-lg); transition: border 0.2s; }
-        .info-card:hover { border-color: #f7d51e; }
-        .info-card .price { font-size: 2rem; font-weight: 900; color: #f7d51e; }
-        .info-card .badge { display: inline-block; background: #f7d51e; color: #000; font-weight: 900; padding: 2px 8px; margin-right: var(--space-sm); font-size: 0.8rem; }
-        .faq-item { border-top: 2px solid #333; padding: var(--space-md) 0; }
-        .faq-item h3 { cursor: pointer; }
-        .faq-item p { display: none; }
-        .faq-item.active p { display: block; }
-        .cta-block { background: #f7d51e; color: #000; text-align: center; padding: var(--space-lg); font-weight: 900; font-size: 1.5rem; margin-top: var(--space-xl); text-transform: uppercase; letter-spacing: -0.02em; }
-        .signature-line { font-size: 0.9rem; color: #888; margin-top: var(--space-xl); border-top: 2px solid #333; padding-top: var(--space-md); text-align: right; }
-    </style>
+<meta charset="UTF-8">
+<title>강서 셔츠룸 정보</title>
+<meta name="description" content="강서 지역 셔츠룸의 비용을 구성하는 요소와 변동 조건을 상세히 분석해, 여러 선택지를 비교하고 최적의 결정을 돕는 전문 가이드입니다.">
+<meta name="keywords" content="강서 셔츠룸, 셔츠룸 비용, 셔츠룸 선택 기준, 강서 셔츠룸 리뷰">
+<link rel="canonical" href="https://gangseo-review-tip.hardcoreroom.com/about.html">
+<meta property="og:title" content="강서 셔츠룸 추천 — 비용 구조와 조건별 선택 가이드">
+<meta property="og:description" content="강서 지역 셔츠룸의 비용을 구성하는 요소와 변동 조건을 상세히 분석해, 여러 선택지를 비교하고 최적의 결정을 돕는 전문 가이드입니다.">
+<meta property="og:url" content="https://gangseo-review-tip.hardcoreroom.com/about.html">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="nav">
-        <div class="container">
-            <a href="/" class="nav-logo">셔츠룸 추천</a>
-            <div class="hamburger-menu" onclick="this.classList.toggle('active'); document.querySelector('.nav-list').classList.toggle('active');">
-                <span></span><span></span><span></span>
-            </div>
-            <ul class="nav-list responsive-768">
-                <li><a href="/">홈</a></li>
-                <li><a href="/info">정보</a></li>
-                <li><a href="/">후기</a></li>
-                <li><a href="/">가격</a></li>
-                <li><a href="tel:010-1234-5678" class="tel-link">전화 문의</a></li>
-            </ul>
-        </div>
-    </nav>
+<header>
+  <h1>강서 셔츠룸 정보</h1>
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle">☰ 메뉴</label>
+  <nav>
+    <ul class="m-list-4n3v">
+      <li><a href="/index.html">홈</a></li>
+      <li><a href="/guide.html">가이드</a></li>
+      <li><a href="/info.html">정보</a></li>
+      <li><a href="/contact.html">연락처</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <main>
-        <section class="section">
-            <div class="container">
-                <h1>강서 셔츠룸<br>진짜 정보</h1>
-                <p style="font-size:1.4rem; font-weight:bold; color:#f7d51e;">기대하는 놈은 당한다. 솔직하게 말한다. 강서구 셔츠룸, 씨발 제대로 알려준다.</p>
-                <p>가짜 리뷰에 속지 마라. 여기는 직접 발로 뛰고, 돈 내고, 경험한 놈들만의 정보다. 시스템? 가격? 위치? 다 까발린다. 니가 알던 강서 셔츠룸은 가짜였다.</p>
-            </div>
-        </section>
+<main class="v-hero-junx">
+  <section>
+    <h2>서비스 개요</h2>
+    <p>강서구 내 셔츠룸은 주로 사교·비즈니스 목적을 위한 프라이빗 공간으로 활용됩니다. 이용자는 개인적인 회식, 소규모 파티, 기업 행사 등 다양한 상황에 맞춰 선택할 수 있습니다. 각 셔츠룸은 위치, 규모, 제공 시설에 따라 차별화된 분위기를 제공하므로, 목적에 부합하는 공간을 정확히 파악하는 것이 중요합니다.</p>
+    <p>본 페이지에서는 강서 지역 셔츠룸을 선택할 때 검토해야 할 핵심 기준, 비용 구조, 예약 절차, 그리고 현장에서 확인해야 할 체크리스트를 체계적으로 정리합니다. 데이터를 기반으로 한 객관적인 분석을 통해 최적의 선택을 지원합니다.</p>
+  </section>
 
-        <section class="section" style="background:#111; padding-top:var(--space-2xl); padding-bottom:var(--space-2xl);">
-            <div class="container">
-                <h2>업소 상세 정보</h2>
-                <p>아래 카드 하나하나가 실제 업소다. 가짜 업소는 거르고, 진짜만 걸렀다.</p>
-                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));">
-                    <div class="info-card">
-                        <span class="badge">인기</span>
-                        <h3>강서1번가 셔츠룸</h3>
-                        <p>위치: 강서구 화곡동 메인로<br>시스템: 룸 7개, 여신 20명+<br>가격: 입장 25만 / 1시간 15만</p>
-                        <p class="price">25만원~</p>
-                        <p><strong>총평:</strong> 가격 대비 만족도 최상. 단, 예약 필수. 번화가 바로 옆이라 접근성 개좋음.</p>
-                    </div>
-                    <div class="info-card">
-                        <span class="badge">신규</span>
-                        <h3>더블 V 셔츠룸</h3>
-                        <p>위치: 강서구 등촌동 역세권<br>시스템: 프리미엄 룸, VIP 라운지<br>가격: 입장 35만 / 1시간 20만</p>
-                        <p class="price">35만원~</p>
-                        <p><strong>총평:</strong> 비싼 만큼 퀄리티 보장. 마인드 좋은 여신들 많음. 돈값 한다.</p>
-                    </div>
-                    <div class="info-card">
-                        <span class="badge">가성비</span>
-                        <h3>화곡 셔츠카페</h3>
-                        <p>위치: 강서구 화곡동 구시장 인근<br>시스템: 5개 룸, 아담한 규모<br>가격: 입장 18만 / 1시간 10만</p>
-                        <p class="price">18만원~</p>
-                        <p><strong>총평:</strong> 가성비 원탑. 초보자 추천. 단, 시스템 단순해서 좀 심심할 수 있음.</p>
-                    </div>
-                    <div class="info-card">
-                        <span class="badge">추천</span>
-                        <h3>강서 황제 셔츠룸</h3>
-                        <p>위치: 강서구 내발산동 대로변<br>시스템: 풀옵션, 노래방+바+룸<br>가격: 입장 40만 / 1시간 25만</p>
-                        <p class="price">40만원~</p>
-                        <p><strong>총평:</strong> 제대로 놀고 싶다면 여기. 서비스 마인드, 시설, 여신 미모 모두 탑급. 단, 호구 잡히지 말고 기본 팁만 주자.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section>
+    <h2>비용 구성 요소</h2>
+    <p>셔츠룸 이용료는 기본 사용 시간에 따라 산정되며, 추가 옵션에 따라 변동됩니다. 주요 비용 항목은 <strong>시간당 기본 요금</strong>, <strong>인원 추가 요금</strong>, <strong>특수 장비(프로젝터, 음향 설비 등) 사용료</strong>, 그리고 <strong>청소·소모품 비용</strong>으로 구분됩니다. 각 항목은 셔츠룸 규모와 제공 서비스 수준에 따라 차이가 발생합니다.</p>
+    <p>예를 들어, 30명 이하 소규모 모임에서는 기본 요금만으로 충분한 경우가 많으나, 50명 이상 대규모 행사에서는 인원 추가 요금과 별도 청소 비용이 발생할 수 있습니다. 또한, 야간 이용 시 혹은 주말·공휴일 이용 시에는 할증 요금이 적용되는 경우가 일반적이므로, 예약 전 정책을 반드시 확인해야 합니다.</p>
+  </section>
 
-        <section class="section">
-            <div class="container">
-                <h2>강서 셔츠룸 필수 팁</h2>
-                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-lg);">
-                    <div>
-                        <h3>가격 흥정?</h3>
-                        <p>니가 첫 손님이냐? 기본 가격표는 거의 비슷하다. 단, 추가 서비스나 시간 연장은 현장에서 협상해라. 여신들이 바쁜 시간대엔 말도 안 되는 금액 부르니까 무조건 깎아라.</p>
-                    </div>
-                    <div>
-                        <h3>위치 선정</h3>
-                        <p>강서구 셔츠룸은 크게 화곡동, 등촌동, 내발산동 세 축. 화곡동은 접근성, 등촌동은 규모, 내발산동은 프리미엄. 니 취향 골라라.</p>
-                    </div>
-                    <div>
-                        <h3>진짜 후기 구분</h3>
-                        <p>블로그 후기? 개나 줘라. 진짜는 여기처럼
+  <section>
+    <h2>제공 시설 및 옵션</h2>
+    <p>강서 셔츠룸은 기본적으로 조명·에어컨·와이파이를 제공하지만, 추가 옵션에 따라 다양한 부가 서비스를 선택할 수 있습니다. 대표적인 옵션으로는 고성능 프로젝터·스크린, 무선 마이크·음향 시스템, 맞춤형 조명 효과, 그리고 디저트·주류 패키지가 있습니다. 각 옵션은 별도 요금이 부과되며, 사전 예약 시 옵션 선택 여부를 명확히 결정하는 것이 비용 관리에 도움이 됩니다.</p>
+    <p>특수 장비가 필요한 경우 현장 설치 시간이 추가될 수 있으므로, 실제 행사 시작 전 충분한 세팅 시간을 확보하는 것이 중요합니다. 또한, 제공되는 소모품(종이컵·접시·식기 등)의 품질과 양도 계약서에 명시된 바를 확인해 불필요한 추가 비용 발생을 방지해야 합니다.</p>
+  </section>
+
+  <section>
+    <h2>예약 절차와 확인사항</h2>
+    <p>예약은 보통 온라인 폼, 전화, 혹은 직접 방문을 통해 이루어집니다. 예약 단계에서 반드시 확인해야 할 사항은 <strong>예약 가능한 시간대</strong>, <strong>취소·변경 정책</strong>, 그리고 <strong>보증금·선결제 방식</strong>입니다. 일부 셔츠룸은 계약서에 명시된 취소 수수료가 존재하므로, 일정 변동 가능성을 고려해 유연한 정책을 제공하는 곳을 우선 선택하는 것이 현명합니다.</p>
+    <p>예약 전에는 반드시 현장 실사를 권장합니다. 실사를 통해 공간의 실제 크기·좌석 배치·출입구 위치·주차 편의성 등을 직접 확인함으로써, 행사 흐름에 맞는 최적의 레이아웃을 설계할 수 있습니다. 실사 시 체크리스트를 활용하면 누락 항목 없이 전반적인 시설 상태를 파악할 수 있습니다.</p>
+  </section>
+
+  <section>
+    <h2>FAQ</h2>
+    <h3>Q1. 최소 예약 인원 제한이 있나요?</h3>
+    <p>대부분의 셔츠룸은 최소 5~10명 정도를 기준으로 예약을 받습니다. 하지만, 일부 고급형 공간은 최소 인원 수를 더 높게 설정하기도 하므로, 사전에 문의하여 확인하는 것이 필요합니다.</p>
+    <h3>Q2. 야간 이용 시 추가 비용은 어떻게 계산되나요?</h3>
+    <p>야간 이용(저녁 8시 이후)에는 기본 요금에 20~30% 수준의 할증이 적용됩니다. 할증 비율은 각 셔츠룸 운영자의 정책에 따라 차이가 있으니, 계약서에 명시된 할증 비율을 반드시 검토하십시오.</p>
+    <h3>Q3. 소규모 모임에 적합한 최소 면적은 어느 정도인가요?</h3>
+    <p>10명 이하 소규모 모임이라면 약 15~20㎡ 정도의 공간이 충분합니다. 이 경우 좌석 배치와 동선 확보가 용이하며, 기본 시설만으로도 원활한 진행이 가능합니다.</p>
+    <h3>Q4. 주말·공휴일 예약 시 특별 혜택이 있나요?</h3>
+    <p>일부 셔츠룸은 주말·공휴일에 한정된 패키지 할인이나 추가 서비스(음료·스낵 제공)를 제공하기도 합니다. 해당 혜택은 사전 예약 시 명시되므로, 웹사이트나 전화 상담을 통해 최신 정보를 확인하시기 바랍니다.</p>
+  </section>
+</main>
+
+<footer class="m-foot-og">
+  <p>© 2026 강서 셔츠룸 가이드. 모든 권리 보유.</p>
+</footer>
 </body>
 </html>
